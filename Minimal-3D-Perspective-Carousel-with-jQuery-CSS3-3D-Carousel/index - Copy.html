@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class=" lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class=" lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class=" lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>jQuery 3D Carousel Demo</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/3dcarousel.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('#carousel').carousel3d();
+		});
+	</script>
+<style type="text/css">
+#perspective {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  -webkit-perspective: 1100px;
+  perspective: 1100px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg) translateZ(-288px);
+}
+    img{
+        width:100%
+    }
+
+#carousel figure {
+  display: block;
+  position: absolute;
+  background: #2ecc71;
+  width: 186px;
+  height: 116px;
+  opacity: 0.6;
+  margin: 12px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  -moz-transition: opacity 1s, -moz-transform 1s;
+  -o-transition: opacity 1s, -o-transform 1s;
+  transition: opacity 1s, transform 1s;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="container">
+  <div id="perspective">
+    <div id="carousel">
+      <figure><img src="slider1/Artboard.png"></figure>
+      <figure><img src="slider1/category%20servicecopy4.png"></figure>
+      <figure><img src="slider1/category%20servicecopy4.png"></figure>
+      <figure><img src="slider1/categoryservicecopy5.png"></figure>
+      <figure><img src="slider1/Chat-copy2.png"></figure>
+      <figure><img src="slider1/request-details.png"></figure>
+      <figure><img src="slider1/signup-copy.png"></figure>
+      <figure><img src="slider1/signup.png"></figure>
+      <figure><img src="slider1/signupcopy.png"></figure>
+      <figure><img src="slider1/profile-menu.png"></figure>
+    </div>
+  </div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
